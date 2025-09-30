@@ -15,15 +15,7 @@
 
   <h1>AirPods</h1>
   <h2>AirPods 1</h2>
-<style>
-        .circle {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;       
-        background-color: black;    
-        margin: 20px auto;  
-        }
-</style>
+
 
 </body>
 </html>
