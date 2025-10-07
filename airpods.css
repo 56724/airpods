@@ -45,3 +45,13 @@ body {
   margin-top: -5px; 
 }
 
+.info {
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
