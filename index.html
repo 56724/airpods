@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -30,11 +31,20 @@
      <a href="https://support.apple.com/en-us/121204" target="_blank">AirPods 4 ANC</a></div>
   </div>
   
+  <label class="switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider"></span>
+  </label>
   <div class="info">
-  <h3>Чому варто обрати AirPods?</h3>
-  <p>AirPods — це поєднання інноваційного дизайну, високої якості звуку та зручності. Вони автоматично підключаються до ваших пристроїв, мають активне шумозаглушення, довгий час роботи батареї та стильний вигляд. Ідеальні для музики, дзвінків та подкастів.</p>
+  <h3>Why choose AirPods?</h3>
+  <p>AirPods are a blend of cutting-edge design, premium sound quality, and effortless usability. They connect automatically to your devices, feature active noise cancellation, offer long battery life, and boast a sleek, stylish look. Perfect for music, calls, and podcasts.</p>
 </div>
-
+<script>
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
 </body>
 
 </html>
