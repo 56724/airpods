@@ -55,3 +55,65 @@ body {
   line-height: 1.6;
 }
 
+
+/* Switch*/
+.switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 34px;
+  position: relative;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+body.dark-mode {
+  background-image: url("https://img.freepik.com/free-photo/solid-painted-concrete-wall-textured-backdrop_53876-110679.jpg?semt=ais_hybrid&w=740&q=80");
+  color: #f0f0f0;
+}
+
+.dark-mode .info {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .circle {
+  background-color: #1e1e1e;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
